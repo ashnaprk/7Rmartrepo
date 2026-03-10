@@ -11,7 +11,10 @@
 		<classes>
 			<class name="testscript.HomePageTest">
 			</class>
+			<class name="testscript.ManageTest"></class>
+			<class name="testscript.UserAdminTest"></class>
 			<class name="testscript.NewsTest"></class>
+			
 		</classes>
 	</test>
 </suite>
