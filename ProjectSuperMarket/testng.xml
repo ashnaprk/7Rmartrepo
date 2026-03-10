@@ -8,8 +8,6 @@
                     <include name="verifyvalidUsernameAndValidPassword"/>
                 </methods>
             </class>
-            <class name="testscript.UserAdminTest">
-            </class>
         </classes>
     </test>
 </suite>
