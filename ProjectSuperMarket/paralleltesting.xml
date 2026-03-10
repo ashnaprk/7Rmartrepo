@@ -12,6 +12,8 @@
 			<class name="testscript.HomePageTest">
 			</class>
 			<class name="testscript.NewsTest"></class>
+			<class name="testscript.UserAdminTest"></class>
+			<class name="testscript.ManageTest"></class>
 		</classes>
 	</test>
 </suite>
