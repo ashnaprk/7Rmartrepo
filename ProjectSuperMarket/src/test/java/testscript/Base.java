@@ -35,13 +35,19 @@ public class Base {
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
 		}
-		if (browser.equalsIgnoreCase("chrome")) {
+		if (browser.equalsIgnoreCase("chrome"))
+		{
 			driver = new ChromeDriver();
-		} else if (browser.equalsIgnoreCase("edge")) {
+		} 
+		/*else if (browser.equalsIgnoreCase("edge"))
+		{
 			driver = new EdgeDriver();
-		} else if (browser.equalsIgnoreCase("firefox")) {
+		} 
+		else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
-		} else {
+		}*/
+		else 
+		{
 			throw new Exception("invalid browser");
 		}
 	  //driver=new ChromeDriver();
