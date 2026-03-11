@@ -10,7 +10,7 @@ import utilities.PageUtility;
 
 public class UserAdminPage {
 	WebDriver driver;
-	PageUtility utility=new PageUtility(); //page utility
+	PageUtility utility=new PageUtility();
 	
 	public UserAdminPage(WebDriver driver)
 	{

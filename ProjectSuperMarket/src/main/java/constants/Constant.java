@@ -1,12 +1,14 @@
-package constants;     //the error message are fully written here no hard coding in no where else
+package constants;     
 
-public class Constant //the things that not change 
+public class Constant  
 
 {
 	
 	public static final String ERRORMESSAGEFORLOGIN="LOGIN FAILED - HOMEPAGE NOT DISPLAYED";//final variable name:capital
 	 
 	public static final String ALERTMESSAGEUSERADDEDSUCCESSFULLY="User added succesfully Alert pops up";
+	
+	public static final String ALERTMESSAGESUCCESSFULLYLOADEDHOMEPAGE="User logged in and successfully logged out";
 	
 	public static final String TESTDATAFILE= System.getProperty("user.dir")+"//src//main//resources//Book1.xlsx"; //external path
 	

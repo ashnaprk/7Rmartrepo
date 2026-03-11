@@ -24,9 +24,8 @@ public class ManageTest extends Base {
 	  String password=ExcelUtilities.getStringData(1, 1, "Loginpagetest");
 	  login.enterUserNameAndPassWordfield(username, password);
 	  homepage=login.loginButton();
-	  //ManagePage info=new ManagePage(driver);
 	  managepage=homepage.manageInfo();
-	  //String entercateogoryname=ExcelUtilities.getStringData(1, 2, "Managetest");
+	  
 	 
 	  managepage.newCateogory().
 	  enterCateogory(ExcelUtilities.getStringData(1, 0, "Managetest"))
@@ -39,11 +38,5 @@ public class ManageTest extends Base {
 	  boolean alertIsDispalyed=managepage.isAlertMsgDisplayed();
 	  Assert.assertTrue(alertIsDispalyed,Constant.ALERTMESSAGEMANAGEPAGEFILEUPLOAD);
 	  
-	 // scrolldown().
-	  
-	 /* info.enterCateogory(entercateogoryname);
-	  info.discounts();
-	  info.topMenu();
-	  info.saveInfo(); */
   }
 }

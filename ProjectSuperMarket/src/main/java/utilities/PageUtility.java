@@ -6,7 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-public class PageUtility  //using page utility- minimum 5 must use
+public class PageUtility 
 
 {
 	public void selectByIndex(WebElement element,int index)
@@ -36,7 +36,6 @@ public class PageUtility  //using page utility- minimum 5 must use
 	{
 		
 		JavascriptExecutor javascript=(JavascriptExecutor) driver;
-		//javascript.executeScript("window.scrollBy(0,500)","");
 		javascript.executeScript("arguments[0].click();", element);
 	}
 

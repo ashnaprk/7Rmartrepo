@@ -4,7 +4,7 @@ import com.github.javafaker.Address;
 import com.github.javafaker.Faker;
 
 public class FakerUtility {
-	Faker faker = new Faker(); //globally declared
+	Faker faker = new Faker();
 	public String getFakeFirstName() {
 
 		

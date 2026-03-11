@@ -61,6 +61,7 @@ public class HomePage
 		return new NewsPage(driver);
 	}
 	
+	
 }
 	
 	
