@@ -23,11 +23,11 @@ public class Base {
 	WebDriver driver;
 	public Properties properties;
 	public FileInputStream fis;
-  @BeforeMethod(alwaysRun = true)
-  @Parameters("Browser")
-  public void browserintialization(String browser) throws Exception 
-  {   
-	  try {
+
+	@BeforeMethod(alwaysRun = true)
+	@Parameters("Browser")
+	public void browserintialization(String browser) throws Exception {
+		try {
 			properties = new Properties();
 			fis = new FileInputStream(Constant.CONFIGFILEPATH);
 			properties.load(fis);
@@ -35,41 +35,36 @@ public class Base {
 		} catch (FileNotFoundException exception) {
 			exception.printStackTrace();
 		}
-		if (browser.equalsIgnoreCase("chrome"))
-		{
+		if (browser.equalsIgnoreCase("chrome")) {
 			driver = new ChromeDriver();
-		} 
-		/*else if (browser.equalsIgnoreCase("edge"))
-		{
+		} else if (browser.equalsIgnoreCase("edge")) {
 			driver = new EdgeDriver();
-		} 
-		else if (browser.equalsIgnoreCase("firefox")) {
+		} else if (browser.equalsIgnoreCase("firefox")) {
 			driver = new FirefoxDriver();
-		}*/
-		else 
-		{
+		}
+
+		else {
 			throw new Exception("invalid browser");
 		}
-	  //driver=new ChromeDriver();
-	  driver.get(properties.getProperty("url"));
-	  driver.manage().window().maximize();
-	  driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));//implicit wait for main page used:wait until a click is done
-	  
-	  
-	  
-  }
-  
-  @AfterMethod(alwaysRun = true)
-  public void afterMethod(ITestResult itResult) throws IOException
-  {
-	  if (itResult.getStatus() == ITestResult.FAILURE) {
+
+		// driver=new ChromeDriver();
+		driver.get(properties.getProperty("url"));
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));// implicit wait for main page used:wait until
+																			// a click is done
+
+	}
+
+	@AfterMethod(alwaysRun = true)
+	public void afterMethod(ITestResult itResult) throws IOException {
+		if (itResult.getStatus() == ITestResult.FAILURE) {
 			ScreenshotUtility sc = new ScreenshotUtility();
 			sc.captureFailureScreenShot(driver, itResult.getName());
 		}
 		if (driver != null) {
 			driver.quit();
 		}
-	  //driver.quit();
-  }
+		// driver.quit();
+	}
 
 }
