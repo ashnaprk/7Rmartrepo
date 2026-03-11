@@ -22,7 +22,7 @@ public class HomePage
 	WebElement logout;
 	
 	@FindBy(xpath="(//a[@class='small-box-footer'])[1]")
-	WebElement moreinfoadmin;  //12)taken from useradminpage first click is this
+	WebElement moreinfoadmin; 
 	
 	@FindBy(xpath="//a[contains(@href,'list-category')]")
 	WebElement managemoreinfo;
@@ -30,24 +30,24 @@ public class HomePage
 	@FindBy(xpath="(//i[@class='fas fa-arrow-circle-right'])[7]")
 	WebElement moreNewsinfo;
 	
-	public HomePage adminButton() //7)admin click after still in homepage
+	public HomePage adminButton() 
 	{
 		
 		admin.click();
 		return this;
 		
 	}
-	public HomePage logoutButton() //8)after logout its gone to login page but can't write it because test case is completed here therefore 
-	{                              //   homepage is returned because to get a completion
+	public HomePage logoutButton()  
+	{                            
 
 		logout.click();
 		return this;
 	
 	}
-	public UserAdminPage moreInfoButton()   //13)taken from useradminpage 
+	public UserAdminPage moreInfoButton()   
 	{
 		moreinfoadmin.click();
-		return new UserAdminPage(driver); //14) return to useradmin page here useradmin page starts
+		return new UserAdminPage(driver); 
 	
 	}
 	public ManagePage manageInfo()

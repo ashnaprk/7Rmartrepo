@@ -15,7 +15,7 @@ import constants.Constant;
 import utilities.FileUploadUtilities;
 //import utilities.PageUtility;
 import utilities.WaitUtility;
-//import utilities.PageUtility;
+
 
 public class ManagePage {
 	
@@ -24,14 +24,13 @@ public class ManagePage {
 	WaitUtility wait=new WaitUtility();
 	 
 	 
-	//PageUtility utility=new PageUtility(); //page utility
+
 	public ManagePage(WebDriver driver)
 	{
 		this.driver=driver;
 		PageFactory.initElements(driver, this);	
 	}
-	//@FindBy(xpath="//a[contains(@href,'list-category')]")
-	//WebElement managemoreinfo;
+	
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")
 	WebElement newcateogory;
 	@FindBy(xpath="//input[@class='form-control']")
@@ -48,10 +47,7 @@ public class ManagePage {
 	WebElement alertmessage;
 	
 	
-	/*public void manageInfo()
-	{
-		managemoreinfo.click();
-	}*/
+	
 	public ManagePage newCateogory()
 	{
 	
@@ -72,7 +68,7 @@ public class ManagePage {
 	public ManagePage choosefiles()
 	{    
 		fileupload.sendKeysForFileUpload(choosefile, Constant.TESTDATAIMAGE);
-		//choosefile.sendKeys(Constant.TESTDATAIMAGE);
+		
 		return this;
 	}
 	

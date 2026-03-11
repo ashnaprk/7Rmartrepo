@@ -34,18 +34,18 @@ public class LoginPage
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")
 	WebElement alert;
 	
-	public LoginPage enterUserNameAndPassWordfield(String usernamevalue,String passwordvalue) //2)still in home page so instead void login
+	public LoginPage enterUserNameAndPassWordfield(String usernamevalue,String passwordvalue) 
 	{
 		username.sendKeys(usernamevalue);
 		password.sendKeys(passwordvalue);
-		return this; //1)whole entering username & password still in Login page so instead of void LoginPage and return to login page itself
+		return this; 
 	}
-	public HomePage loginButton() //4)homepage is given instead of void because it goes to homepage after loginclick
+	public HomePage loginButton() 
 	{
 	
 		wait.elementToBeClicked(driver, login);
 		login.click();
-		return new HomePage(driver); //3)after clicking goes to homepage so return-new homepage driver
+		return new HomePage(driver); 
 	}
 	public boolean isHomePagedisplayed()
 	{

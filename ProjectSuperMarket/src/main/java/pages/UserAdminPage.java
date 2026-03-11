@@ -34,11 +34,11 @@ public class UserAdminPage {
 	@FindBy(xpath="//button[@name='Create']")
 	WebElement save;
 	
-	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") //assertion (webelement)
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") 
 	WebElement alertmsg;
 	
 	
-	public UserAdminPage newButton() //15 all methods are changed to return useradmin because after each method is executed it stays in the useradmin page
+	public UserAdminPage newButton() 
 	{
 		newbutton.click();
 		return this;
@@ -48,13 +48,10 @@ public class UserAdminPage {
 	{   username.sendKeys(username1);
 	    password.sendKeys(password1);
 	   
-		//usernamefield.sendKeys("MSdhonii");
-		//passwordfield.sendKeys("chennai");
 		
 		utility.selectByIndex(usertype, 2);
 		return this;
-		//Select select=new Select(dropdownfield);
-		//select.selectByIndex(2);
+		
 	}
 	
 	public UserAdminPage saveButton()
@@ -62,7 +59,7 @@ public class UserAdminPage {
 		save.click();
 		return this;
 	}
-	public boolean isAlertMessageDisplayed() //for assertion
+	public boolean isAlertMessageDisplayed()
 	{
 		return alertmsg.isDisplayed();
 	}
