@@ -21,8 +21,8 @@ public class UserAdminTest extends Base {
 	UserAdminPage adminpage;
 	FakerUtility faker=new FakerUtility();
 	
-  @Test(description = "VERIFY NEWUSER TO ADMINPAGE",retryAnalyzer = retry.Retry.class)
-  public void verifyAdminInfo() throws IOException //throws AWTException 
+  @Test(description = "verify newuser to adminpage",retryAnalyzer = retry.Retry.class)
+  public void verifyAdminInfo() throws IOException 
   {
 	  LoginPage login=new LoginPage(driver);
 	  String username=ExcelUtilities.getStringData(1, 0, "Adminpagetest");

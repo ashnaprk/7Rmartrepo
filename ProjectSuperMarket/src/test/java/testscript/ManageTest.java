@@ -16,7 +16,7 @@ public class ManageTest extends Base {
 	HomePage homepage;
 	ManagePage managepage;
 	
-  @Test()
+  @Test(description = "Verify manage page and upload files")
   public void verifyManagerInfo() throws IOException, AWTException 
   {   
 	  LoginPage login=new LoginPage(driver);

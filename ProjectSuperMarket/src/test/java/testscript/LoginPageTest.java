@@ -15,7 +15,7 @@ import utilities.ExcelUtilities;
 public class LoginPageTest extends Base {
 	HomePage homepage;
 
-	@Test(dataProvider = "credentialvalues", groups = "smoke")
+	@Test(description="Verify LoginPage",dataProvider = "credentialvalues", groups = "smoke")
 	public void verifyData(String username, String password) {
 		LoginPage login = new LoginPage(driver);
 		login.enterUserNameAndPassWordfield(username, password);
@@ -31,7 +31,7 @@ public class LoginPageTest extends Base {
 		return data;
 	}
 
-	@Test(groups = "smoke")
+	@Test(description = "verify valid username and valid password",groups = "smoke")
 	public void verifyvalidUsernameAndValidPassword() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtilities.getStringData(1, 0, "LoginpageTest");
@@ -41,7 +41,7 @@ public class LoginPageTest extends Base {
 
 	}
 
-	@Test
+	@Test(description = "verify invalid username and valid password")
 	@Parameters({ "usernamefields", "passwordfields" })
 	public void verifyInvalidUsernameAndValidPassword(String username, String password) {
 		LoginPage login = new LoginPage(driver);
@@ -50,7 +50,7 @@ public class LoginPageTest extends Base {
 
 	}
 
-	@Test
+	@Test(description = "verify valid username and invalid password")
 	@Parameters({ "usernamefield", "passwordfield" })
 	public void verifyValidUsernameAndInvalidPassword(String username, String password) {
 		LoginPage login = new LoginPage(driver);

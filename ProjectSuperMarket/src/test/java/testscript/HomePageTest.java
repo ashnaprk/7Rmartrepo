@@ -14,7 +14,7 @@ import utilities.ExcelUtilities;
 public class HomePageTest extends Base {
 	HomePage homepage;
 
-	@Test
+	@Test(description = "Verify Logout")
 	public void verifylogout() throws AWTException, IOException
 
 	{

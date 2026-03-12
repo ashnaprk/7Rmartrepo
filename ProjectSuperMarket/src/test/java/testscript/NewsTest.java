@@ -15,7 +15,7 @@ public class NewsTest extends Base {
 	NewsPage newspage;
 
 
-	@Test
+	@Test(description = "Verify in newspage add news messages")
 	public void addNews() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtilities.getStringData(1, 0, "LoginpageTest");
