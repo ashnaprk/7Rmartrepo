@@ -2,22 +2,27 @@ package testscript;
 
 import java.awt.AWTException;
 //import java.awt.Robot;
+import java.io.IOException;
 
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
 import pages.LoginPage;
+import utilities.ExcelUtilities;
 
 public class HomePageTest extends Base {
 	HomePage homepage;
 
 	@Test
-	public void verifylogout() throws AWTException
+	public void verifylogout() throws AWTException, IOException
 
 	{
 		LoginPage login = new LoginPage(driver);
-		login.enterUserNameAndPassWordfield("admin", "admin");
+		String username = ExcelUtilities.getStringData(1, 0, "HomeTest");
+		String password = ExcelUtilities.getStringData(1, 1, "HomeTest");
+		login.enterUserNameAndPassWordfield(username, password);
+		
 		homepage = login.loginButton();
 		homepage.adminButton().logoutButton();
 		String expected = "Login | 7rmart supermarket";

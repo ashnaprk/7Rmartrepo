@@ -14,15 +14,15 @@ public class PageUtility
 		Select select=new Select(element);
 		select.selectByIndex(index);
 	}
-	public void selectByValue(WebElement element)
+	public void selectByValue(WebElement element,String text)
 	{
 		Select select=new Select(element);
-		select.selectByValue(null);
+		select.selectByValue(text);
 	}
-	public void selectByVisibleText(WebElement element)
+	public void selectByVisibleText(WebElement element, String text)
 	{
 		Select select=new Select(element);
-		select.selectByVisibleText(null);
+		select.selectByVisibleText(text);
 		
 	}
 	public void action(WebElement element)

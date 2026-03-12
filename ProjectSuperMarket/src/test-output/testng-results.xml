@@ -2,22 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-10T23:54:12 IST" name="Default suite" finished-at="2026-03-10T23:54:12 IST" duration-ms="139">
+  <suite started-at="2026-03-12T00:44:56 IST" name="Default suite" finished-at="2026-03-12T00:44:56 IST" duration-ms="46">
     <groups>
     </groups>
-    <test started-at="2026-03-10T23:54:12 IST" name="Default test" finished-at="2026-03-10T23:54:12 IST" duration-ms="139">
-      <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.NewsTest@2e9f5499]" started-at="2026-03-10T23:54:12 IST" name="browserintialization" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1773167052928" status="FAIL">
+    <test started-at="2026-03-12T00:44:56 IST" name="Default test" finished-at="2026-03-12T00:44:56 IST" duration-ms="46">
+      <class name="testscript.HomePageTest">
+        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.HomePageTest@515c6049]" started-at="2026-03-12T00:44:56 IST" name="browserintialization" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1773256496239" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
-in C:\Users\ashna\AppData\Local\Temp\testng-eclipse--1603054127\testng-customsuite.xml]]>
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse-1882059132\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
-in C:\Users\ashna\AppData\Local\Temp\testng-eclipse--1603054127\testng-customsuite.xml
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse-1882059132\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:264)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -53,17 +53,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserintialization -->
-        <test-method signature="addNews()[pri:0, instance:testscript.NewsTest@2e9f5499]" started-at="2026-03-10T23:54:12 IST" name="addNews" finished-at="2026-03-10T23:54:12 IST" duration-ms="0" status="SKIP">
+        <test-method signature="verifylogout()[pri:0, instance:testscript.HomePageTest@515c6049]" started-at="2026-03-12T00:44:56 IST" name="verifylogout" finished-at="2026-03-12T00:44:56 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
-in C:\Users\ashna\AppData\Local\Temp\testng-eclipse--1603054127\testng-customsuite.xml]]>
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse-1882059132\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
-in C:\Users\ashna\AppData\Local\Temp\testng-eclipse--1603054127\testng-customsuite.xml
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse-1882059132\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:264)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -98,19 +98,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNews -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@2e9f5499]" started-at="2026-03-10T23:54:12 IST" name="afterMethod" finished-at="2026-03-10T23:54:12 IST" duration-ms="4" status="PASS">
+        </test-method> <!-- verifylogout -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.HomePageTest@515c6049]" started-at="2026-03-12T00:44:56 IST" name="afterMethod" finished-at="2026-03-12T00:44:56 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNews status=SKIP method=NewsTest.addNews()[pri:0, instance:testscript.NewsTest@2e9f5499] output={null}]]]>
+                <![CDATA[[TestResult name=verifylogout status=SKIP method=HomePageTest.verifylogout()[pri:0, instance:testscript.HomePageTest@515c6049] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testscript.NewsTest -->
+      </class> <!-- testscript.HomePageTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -8,12 +8,12 @@ import pages.HomePage;
 import pages.LoginPage;
 import pages.NewsPage;
 import utilities.ExcelUtilities;
-import utilities.FakerUtility;
+
 
 public class NewsTest extends Base {
 	HomePage homepage;
 	NewsPage newspage;
-	FakerUtility faker = new FakerUtility();
+
 
 	@Test
 	public void addNews() throws IOException {
