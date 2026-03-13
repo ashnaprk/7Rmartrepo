@@ -9,7 +9,7 @@
 		
 
 		<classes>
-			<class name="testscript.UserAdminTest">
+			<class name="testscript.ManageTest">
 			</class>
 			
 			
