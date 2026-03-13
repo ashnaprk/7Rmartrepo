@@ -4,16 +4,13 @@
 	<listeners>
 		<listener class-name="generatereport.Listeners"></listener>
 	</listeners>
-	<parameter name="Browser" value="Chrome"></parameter>
+	<parameter name="Browser" value="chrome"></parameter>
 	<test name="chromeTest">
 		
 
 		<classes>
 			<class name="testscript.HomePageTest"></class>
-			<class name="testscript.LoginPageTest"></class>
-			<class name="testscript.ManageTest"></class>
-			<class name="testscript.NewsTest"></class>
-			<class name="testscript.UserAdminTest"></class>
+			
 			
 			
 			
