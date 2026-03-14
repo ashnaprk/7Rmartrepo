@@ -2,25 +2,22 @@
 <testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-13T11:15:32 IST" name="Suite" finished-at="2026-03-13T11:15:32 IST" duration-ms="59">
+  <suite started-at="2026-03-15T00:58:12 IST" name="Default suite" finished-at="2026-03-15T00:58:13 IST" duration-ms="80">
     <groups>
-      <group name="smoke">
-        <method signature="LoginPageTest.verifyvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginPageTest@78691363]" name="verifyvalidUsernameAndValidPassword" class="testscript.LoginPageTest"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2026-03-13T11:15:32 IST" name="Test" finished-at="2026-03-13T11:15:32 IST" duration-ms="59">
-      <class name="testscript.LoginPageTest">
-        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.LoginPageTest@78691363]" started-at="2026-03-13T11:15:32 IST" name="browserintialization" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1773380732720" status="FAIL">
+    <test started-at="2026-03-15T00:58:12 IST" name="Default test" finished-at="2026-03-15T00:58:13 IST" duration-ms="80">
+      <class name="testscript.ManageTest">
+        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.ManageTest@4d5d943d]" started-at="2026-03-15T00:58:13 IST" name="browserintialization" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1773516493019" status="FAIL">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
-in C:\Users\ashna\git\7Rmartrepo\ProjectSuperMarket\testng.xml]]>
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse--1149047694\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
-in C:\Users\ashna\git\7Rmartrepo\ProjectSuperMarket\testng.xml
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse--1149047694\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:264)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -56,17 +53,17 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserintialization -->
-        <test-method signature="verifyvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginPageTest@78691363]" started-at="2026-03-13T11:15:32 IST" name="verifyvalidUsernameAndValidPassword" description="verify valid username and valid password" finished-at="2026-03-13T11:15:32 IST" duration-ms="1" status="SKIP">
+        <test-method signature="verifyManagerInfo()[pri:0, instance:testscript.ManageTest@4d5d943d]" started-at="2026-03-15T00:58:13 IST" name="verifyManagerInfo" description="Verify manage page and upload files" finished-at="2026-03-15T00:58:13 IST" duration-ms="0" status="SKIP">
           <exception class="org.testng.TestNGException">
             <message>
               <![CDATA[
 Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
-in C:\Users\ashna\git\7Rmartrepo\ProjectSuperMarket\testng.xml]]>
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse--1149047694\testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.testng.TestNGException: 
 Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
-in C:\Users\ashna\git\7Rmartrepo\ProjectSuperMarket\testng.xml
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse--1149047694\testng-customsuite.xml
 at org.testng.internal.Parameters.createParams(Parameters.java:264)
 at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
 at org.testng.internal.Parameters.createParameters(Parameters.java:690)
@@ -101,19 +98,19 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyvalidUsernameAndValidPassword -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.LoginPageTest@78691363]" started-at="2026-03-13T11:15:32 IST" name="afterMethod" finished-at="2026-03-13T11:15:32 IST" duration-ms="3" status="PASS">
+        </test-method> <!-- verifyManagerInfo -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.ManageTest@4d5d943d]" started-at="2026-03-15T00:58:13 IST" name="afterMethod" finished-at="2026-03-15T00:58:13 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyvalidUsernameAndValidPassword status=SKIP method=LoginPageTest.verifyvalidUsernameAndValidPassword()[pri:0, instance:testscript.LoginPageTest@78691363] output={null}]]]>
+                <![CDATA[[TestResult name=verifyManagerInfo status=SKIP method=ManageTest.verifyManagerInfo()[pri:0, instance:testscript.ManageTest@4d5d943d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testscript.LoginPageTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+      </class> <!-- testscript.ManageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

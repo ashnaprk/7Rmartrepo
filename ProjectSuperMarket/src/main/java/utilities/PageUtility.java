@@ -6,37 +6,46 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
-public class PageUtility 
+public class PageUtility
 
 {
-	public void selectByIndex(WebElement element,int index)
-	{
-		Select select=new Select(element);
+	public void selectByIndex(WebElement element, int index) {
+		Select select = new Select(element);
 		select.selectByIndex(index);
 	}
-	public void selectByValue(WebElement element,String text)
-	{
-		Select select=new Select(element);
+
+	public void selectByValue(WebElement element, String text) {
+		Select select = new Select(element);
 		select.selectByValue(text);
 	}
-	public void selectByVisibleText(WebElement element, String text)
-	{
-		Select select=new Select(element);
+
+	public void selectByVisibleText(WebElement element, String text) {
+		Select select = new Select(element);
 		select.selectByVisibleText(text);
-		
+
 	}
-	public void action(WebElement element)
-	{ 
-		Actions action=new Actions((WebDriver) element);
+
+	public void action(WebElement element) {
+		Actions action = new Actions((WebDriver) element);
 		action.moveToElement(element).click();
 		action.doubleClick(element).click();
-		
+
 	}
-	 public void scrollDown(WebDriver driver,WebElement element)
-	{
-		
-		JavascriptExecutor javascript=(JavascriptExecutor) driver;
+
+	public void scrollDown(WebDriver driver, WebElement element) {
+
+		JavascriptExecutor javascript = (JavascriptExecutor) driver;
 		javascript.executeScript("arguments[0].click();", element);
+	}
+
+	public void scrollDownAction(WebDriver driver) {
+		JavascriptExecutor javascript = (JavascriptExecutor) driver;
+		javascript.executeScript("window.scrollBy(0,500)", " ");
+	}
+
+	public void scrollIntoView(WebDriver driver, WebElement element) {
+		JavascriptExecutor javascript = (JavascriptExecutor) driver;
+		javascript.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
 }
