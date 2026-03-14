@@ -9,8 +9,8 @@
 		
 
 		<classes>
-			<class name="testscript.ManagePageTest"></class>
-			<class name="testscript.NewsPageTest"></class>
+			<class name="testscript.ManageTest"></class>
+			<class name="testscript.NewsTest"></class>
 			
 			
 			
