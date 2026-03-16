@@ -69,10 +69,9 @@ public class ManagePage {
 	{
 
 		
-		wait.visibilityOfElement(driver, topmenuradiobutton);
-		//JavascriptExecutor js = (JavascriptExecutor) driver;
-		//js.executeScript("arguments[0].click();", topmenuradiobutton);
-		page.scrollDown(driver, topmenuradiobutton);
+		 page.scrollIntoView(driver, topmenuradiobutton);
+		    wait.elementToBeClicked(driver, topmenuradiobutton);
+		    topmenuradiobutton.click();
 		return this;
 		
 
