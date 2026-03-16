@@ -113,7 +113,7 @@ public class ManagePage {
 	}
 
 	public boolean isAlertMsgDisplayed() {
-		wait.visibilityOfElement(driver, alertmessage);
+		 wait.visibilityOfElement(driver, alertmessage);
 		return alertmessage.isDisplayed();
 
 	}
