@@ -32,7 +32,7 @@ public class PageUtility
 
 	}
 
-	public void scrollDown(WebDriver driver, WebElement element) {
+	public void jsClick(WebDriver driver, WebElement element) {
 
 		JavascriptExecutor javascript = (JavascriptExecutor) driver;
 		javascript.executeScript("arguments[0].click();", element);

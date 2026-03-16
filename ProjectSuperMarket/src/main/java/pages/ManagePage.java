@@ -70,8 +70,8 @@ public class ManagePage {
 
 		
 		 page.scrollIntoView(driver, topmenuradiobutton);
-		    wait.elementToBeClicked(driver, topmenuradiobutton);
-		    topmenuradiobutton.click();
+		    wait.visibilityOfElement(driver, topmenuradiobutton);
+		    page.jsClick(driver,topmenuradiobutton);
 		return this;
 		
 
@@ -86,29 +86,29 @@ public class ManagePage {
 		//js.executeScript("arguments[0].scrollIntoView(true);", savebutton);
 
 		wait.elementToBeClicked(driver, savebutton);
-        page.scrollDown(driver, savebutton);
+        savebutton.click();
 		//js.executeScript("arguments[0].click();", savebutton);
 
 		return this;
 	}
 
-	public ManagePage scrollDownAction() {
+	//public ManagePage scrollDownAction() {
 		//JavascriptExecutor javascript = (JavascriptExecutor) driver;
 		//javascript.executeScript("window.scrollBy(0,500)", " ");
-		page.scrollDownAction(driver);
-		return this;
+		//page.scrollDownAction(driver);
+		//return this;
 
-	}
+	//}
 
-	public ManagePage scrolldownActionToTopMenuButton()
+	//public ManagePage scrolldownActionToTopMenuButton()
 
-	{
+	//{
 
 		//JavascriptExecutor javascript = (JavascriptExecutor) driver;
 		//javascript.executeScript("arguments[0].scrollIntoView(true)", topmenuradiobutton);
-		page.scrollIntoView(driver, topmenuradiobutton);
-		return this;
-	}
+		//page.scrollIntoView(driver, topmenuradiobutton);
+		//return this;
+	//}
 
 	public boolean isAlertMsgDisplayed() {
 		wait.visibilityOfElement(driver, alertmessage);
