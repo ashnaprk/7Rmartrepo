@@ -74,9 +74,13 @@ public class ManagePage {
 	
 	{   
 		
-		wait.elementToBeClicked(driver, topmenuradiobutton);
-		topmenuradiobutton.click();
-		return this;
+		//wait.elementToBeClicked(driver, topmenuradiobutton);
+		wait.visibilityOfElement(driver, topmenuradiobutton);
+	    JavascriptExecutor js = (JavascriptExecutor) driver;
+	    js.executeScript("arguments[0].click();", topmenuradiobutton);
+	    return this;
+		//topmenuradiobutton.click();
+	
 	}
 	
 	public ManagePage saveInfo()
