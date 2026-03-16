@@ -21,7 +21,7 @@ public class UserAdminTest extends Base {
 	UserAdminPage adminpage;
 	FakerUtility faker=new FakerUtility();
 	
-  @Test(description = "verify newuser to adminpage",retryAnalyzer = retry.Retry.class)
+  @Test(description = "Verify the functionality of adding a new user",retryAnalyzer = retry.Retry.class)
   public void verifyAdminInfo() throws IOException 
   {
 	  LoginPage login=new LoginPage(driver);
