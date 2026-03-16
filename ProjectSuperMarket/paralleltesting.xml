@@ -10,8 +10,7 @@
 
 		<classes>
 			<class name="testscript.ManageTest"></class>
-			<class name="testscript.HomePageTest"></class>
-		
+			
 			
 			
 			
