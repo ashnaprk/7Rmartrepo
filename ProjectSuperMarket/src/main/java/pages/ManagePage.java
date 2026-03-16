@@ -74,7 +74,7 @@ public class ManagePage {
 	
 	{   
 		
-		wait.visibilityOfElement(driver, topmenuradiobutton);
+		wait.elementToBeClicked(driver, topmenuradiobutton);
 		topmenuradiobutton.click();
 		return this;
 	}
