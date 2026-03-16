@@ -7,6 +7,13 @@
   </listeners>
   <test thread-count="5" parallel="classes" name="chromeTest(failed)">
     <classes>
+      <class name="testscript.NewsTest">
+        <methods>
+          <include name="addNews"/>
+          <include name="browserintialization"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- testscript.NewsTest -->
       <class name="testscript.ManageTest">
         <methods>
           <include name="browserintialization"/>

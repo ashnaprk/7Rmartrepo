@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Mar 16 11:43:12 IST 2026</td>
+<td>Started on:</td><td>Mon Mar 16 11:46:55 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1739 ms)</td>
+<tr><td>Total time:</td><td>3 seconds (3249 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,7 +76,7 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testscript.NewsTest.addNews()'><b>addNews</b><br>Test class: testscript.NewsTest<br>Test method: Verify in newspage add news messages</td>
+<td title='testscript.ManageTest.verifyManagerInfo()'><b>verifyManagerInfo</b><br>Test class: testscript.ManageTest<br>Test method: Verify manage page and upload files</td>
 <td><div><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
 	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
@@ -86,7 +86,7 @@ function toggleAllBoxes() {
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
 	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testscript.NewsTest.addNews(NewsTest.java:21)
+	at testscript.ManageTest.verifyManagerInfo(ManageTest.java:23)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
@@ -96,8 +96,8 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
 	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
 	... 26 more
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1656995743", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1656995743'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace827576050", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace827576050'><pre>org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
 	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
 	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
 	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
@@ -106,7 +106,7 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
 	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testscript.NewsTest.addNews(NewsTest.java:21)
+	at testscript.ManageTest.verifyManagerInfo(ManageTest.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,9 +131,9 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
 	... 26 more
 </pre></div></td>
 <td>0</td>
-<td>testscript.NewsTest@14bdbc74</td></tr>
+<td>testscript.ManageTest@6c008c24</td></tr>
 <tr>
-<td title='testscript.ManageTest.verifyManagerInfo()'><b>verifyManagerInfo</b><br>Test class: testscript.ManageTest<br>Test method: Verify manage page and upload files</td>
+<td title='testscript.NewsTest.addNews()'><b>addNews</b><br>Test class: testscript.NewsTest<br>Test method: Verify in newspage add news messages</td>
 <td><div><pre>java.io.IOException: Stream Closed
 	at java.base/java.io.FileInputStream.available0(Native Method)
 	at java.base/java.io.FileInputStream.available(FileInputStream.java:415)
@@ -157,14 +157,14 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
 	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testscript.ManageTest.verifyManagerInfo(ManageTest.java:23)
+	at testscript.NewsTest.addNews(NewsTest.java:21)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1223938364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1223938364'><pre>java.io.IOException: Stream Closed
+... Removed 13 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace763161155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace763161155'><pre>java.io.IOException: Stream Closed
 	at java.base/java.io.FileInputStream.available0(Native Method)
 	at java.base/java.io.FileInputStream.available(FileInputStream.java:415)
 	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
@@ -187,7 +187,7 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
 	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
 	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testscript.ManageTest.verifyManagerInfo(ManageTest.java:23)
+	at testscript.NewsTest.addNews(NewsTest.java:21)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -208,7 +208,7 @@ Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
 	at java.base/java.lang.Thread.run(Thread.java:842)
 </pre></div></td>
 <td>0</td>
-<td>testscript.ManageTest@210ab13f</td></tr>
+<td>testscript.NewsTest@58ff8d79</td></tr>
 </table><p>
 </body>
 </html>

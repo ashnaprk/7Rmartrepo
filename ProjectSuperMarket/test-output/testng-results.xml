@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="0" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-16T11:07:36 IST" name="paralleltesting" finished-at="2026-03-16T11:07:42 IST" duration-ms="6557">
+  <suite started-at="2026-03-16T11:46:55 IST" name="paralleltesting2" finished-at="2026-03-16T11:46:58 IST" duration-ms="3249">
     <groups>
     </groups>
-    <test started-at="2026-03-16T11:07:36 IST" name="chromeTest" finished-at="2026-03-16T11:07:42 IST" duration-ms="6557">
+    <test started-at="2026-03-16T11:46:55 IST" name="chromeTest" finished-at="2026-03-16T11:46:58 IST" duration-ms="3249">
       <class name="testscript.ManageTest">
-        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.ManageTest@6f43c82]" started-at="2026-03-16T11:07:36 IST" name="browserintialization" finished-at="2026-03-16T11:07:38 IST" duration-ms="2033" status="PASS">
+        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.ManageTest@6c008c24]" started-at="2026-03-16T11:46:55 IST" name="browserintialization" finished-at="2026-03-16T11:46:57 IST" duration-ms="2052" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,51 +18,104 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserintialization -->
-        <test-method signature="verifyManagerInfo()[pri:0, instance:testscript.ManageTest@6f43c82]" started-at="2026-03-16T11:07:38 IST" name="verifyManagerInfo" description="Verify manage page and upload files" finished-at="2026-03-16T11:07:42 IST" duration-ms="4143" status="FAIL">
-          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+        <test-method signature="verifyManagerInfo()[pri:0, instance:testscript.ManageTest@6c008c24]" started-at="2026-03-16T11:46:57 IST" name="verifyManagerInfo" description="Verify manage page and upload files" finished-at="2026-03-16T11:46:58 IST" duration-ms="611" status="FAIL">
+          <exception class="org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException">
             <message>
-              <![CDATA[element click intercepted: Element is not clickable at point (480, 725)
-  (Session info: chrome=146.0.7680.80)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38ecf8e270a766ccbb122a29b886af64, clickElement {id=f.9651F955D9F347B6D40A42611304DEE5.d.FE0575D31C6B77A912C702F9C501BF62.e.88}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49712}, goog:processID: 15524, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49712/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (38ecf8e270a766ccbb122a29b886af64)] -> xpath: (//input[@value='no'])[1]]
-Session ID: 38ecf8e270a766ccbb122a29b886af64]]>
+              <![CDATA[No valid entries or contents found, this is not a valid OOXML (Office Open XML) file]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (480, 725)
-  (Session info: chrome=146.0.7680.80)
-Build info: version: '4.38.0', revision: '6b412e825c*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38ecf8e270a766ccbb122a29b886af64, clickElement {id=f.9651F955D9F347B6D40A42611304DEE5.d.FE0575D31C6B77A912C702F9C501BF62.e.88}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49712}, goog:processID: 15524, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49712/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (38ecf8e270a766ccbb122a29b886af64)] -> xpath: (//input[@value='no'])[1]]
-Session ID: 38ecf8e270a766ccbb122a29b886af64
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+              <![CDATA[org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:94)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
+at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
+at testscript.ManageTest.verifyManagerInfo(ManageTest.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-at pages.ManagePage.topMenu(ManagePage.java:78)
-at testscript.ManageTest.verifyManagerInfo(ManageTest.java:36)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:842)
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyManagerInfo -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.ManageTest@6c008c24]" started-at="2026-03-16T11:46:58 IST" name="afterMethod" finished-at="2026-03-16T11:46:58 IST" duration-ms="375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyManagerInfo status=FAILURE method=ManageTest.verifyManagerInfo()[pri:0, instance:testscript.ManageTest@6c008c24] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testscript.ManageTest -->
+      <class name="testscript.NewsTest">
+        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.NewsTest@58ff8d79]" started-at="2026-03-16T11:46:55 IST" name="browserintialization" finished-at="2026-03-16T11:46:57 IST" duration-ms="2178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserintialization -->
+        <test-method signature="addNews()[pri:0, instance:testscript.NewsTest@58ff8d79]" started-at="2026-03-16T11:46:57 IST" name="addNews" description="Verify in newspage add news messages" finished-at="2026-03-16T11:46:58 IST" duration-ms="642" status="FAIL">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Stream Closed]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Stream Closed
+at java.base/java.io.FileInputStream.available0(Native Method)
+at java.base/java.io.FileInputStream.available(FileInputStream.java:415)
+at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:182)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:106)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
+at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
+at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
+at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
+at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.<init>(ZipArchiveFakeEntry.java:82)
+at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.<init>(ZipInputStreamZipEntrySource.java:98)
+at org.apache.poi.openxml4j.opc.ZipPackage.<init>(ZipPackage.java:132)
+at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:290)
+at org.apache.poi.xssf.usermodel.XSSFWorkbook.<init>(XSSFWorkbook.java:286)
+at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
+at testscript.NewsTest.addNews(NewsTest.java:21)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,22 +136,22 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:842)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          </exception> <!-- java.io.IOException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyManagerInfo -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.ManageTest@6f43c82]" started-at="2026-03-16T11:07:42 IST" name="afterMethod" finished-at="2026-03-16T11:07:42 IST" duration-ms="323" status="PASS">
+        </test-method> <!-- addNews -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@58ff8d79]" started-at="2026-03-16T11:46:58 IST" name="afterMethod" finished-at="2026-03-16T11:46:58 IST" duration-ms="266" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyManagerInfo status=FAILURE method=ManageTest.verifyManagerInfo()[pri:0, instance:testscript.ManageTest@6f43c82] output={null}]]]>
+                <![CDATA[[TestResult name=addNews status=FAILURE method=NewsTest.addNews()[pri:0, instance:testscript.NewsTest@58ff8d79] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- testscript.ManageTest -->
+      </class> <!-- testscript.NewsTest -->
     </test> <!-- chromeTest -->
-  </suite> <!-- paralleltesting -->
+  </suite> <!-- paralleltesting2 -->
 </testng-results>

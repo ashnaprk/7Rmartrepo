@@ -1,7 +1,5 @@
 package pages;
 
-import org.openqa.selenium.JavascriptExecutor;
-
 //import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,15 +8,17 @@ import org.openqa.selenium.support.PageFactory;
 
 import constants.Constant;
 import utilities.FileUploadUtilities;
-//import utilities.PageUtility;
+import utilities.PageUtility;
+
 import utilities.WaitUtility;
-//import utilities.PageUtility;
+
 
 public class ManagePage {
 
 	WebDriver driver;
 	FileUploadUtilities fileupload = new FileUploadUtilities();
 	WaitUtility wait = new WaitUtility();
+	PageUtility page=new PageUtility();
 
 	public ManagePage(WebDriver driver) {
 		this.driver = driver;
@@ -41,6 +41,7 @@ public class ManagePage {
 	WebElement alertmessage;
 
 	public ManagePage newCateogory() {
+		
 
 		newcateogory.click();
 		return this;
@@ -67,33 +68,35 @@ public class ManagePage {
 
 	{
 
-		// wait.elementToBeClicked(driver, topmenuradiobutton);
+		
 		wait.visibilityOfElement(driver, topmenuradiobutton);
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-		js.executeScript("arguments[0].click();", topmenuradiobutton);
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
+		//js.executeScript("arguments[0].click();", topmenuradiobutton);
+		page.scrollDown(driver, topmenuradiobutton);
 		return this;
-		// topmenuradiobutton.click();
+		
 
 	}
 
 	public ManagePage saveInfo()
 
 	{
+        page.scrollIntoView(driver, savebutton);
+		//JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		JavascriptExecutor js = (JavascriptExecutor) driver;
-
-		js.executeScript("arguments[0].scrollIntoView(true);", savebutton);
+		//js.executeScript("arguments[0].scrollIntoView(true);", savebutton);
 
 		wait.elementToBeClicked(driver, savebutton);
-
-		js.executeScript("arguments[0].click();", savebutton);
+        page.scrollDown(driver, savebutton);
+		//js.executeScript("arguments[0].click();", savebutton);
 
 		return this;
 	}
 
 	public ManagePage scrollDownAction() {
-		JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		javascript.executeScript("window.scrollBy(0,500)", " ");
+		//JavascriptExecutor javascript = (JavascriptExecutor) driver;
+		//javascript.executeScript("window.scrollBy(0,500)", " ");
+		page.scrollDownAction(driver);
 		return this;
 
 	}
@@ -102,8 +105,9 @@ public class ManagePage {
 
 	{
 
-		JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		javascript.executeScript("arguments[0].scrollIntoView(true)", topmenuradiobutton);
+		//JavascriptExecutor javascript = (JavascriptExecutor) driver;
+		//javascript.executeScript("arguments[0].scrollIntoView(true)", topmenuradiobutton);
+		page.scrollIntoView(driver, topmenuradiobutton);
 		return this;
 	}
 

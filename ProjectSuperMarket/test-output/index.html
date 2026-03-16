@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-paralleltesting" class="navigator-link">
-              <span class="suite-name border-failed">paralleltesting</span>
+            <a href="#" panel-name="suite-paralleltesting2" class="navigator-link">
+              <span class="suite-name border-failed">paralleltesting2</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-paralleltesting" class="navigator-link ">
-                    <span>C:\Users\ashna\git\7Rmartrepo\ProjectSuperMarket\paralleltesting.xml</span>
+                  <a href="#" panel-name="test-xml-paralleltesting2" class="navigator-link ">
+                    <span>C:\Users\ashna\git\7Rmartrepo\ProjectSuperMarket\paralleltesting2.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-paralleltesting" class="navigator-link ">
+                  <a href="#" panel-name="testlist-paralleltesting2" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-paralleltesting" class="navigator-link ">
+                  <a href="#" panel-name="group-paralleltesting2" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-paralleltesting" class="navigator-link ">
+                  <a href="#" panel-name="times-paralleltesting2" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-paralleltesting" class="navigator-link ">
+                  <a href="#" panel-name="reporter-paralleltesting2" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-paralleltesting" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-paralleltesting2" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-paralleltesting" class="navigator-link ">
+                  <a href="#" panel-name="chronological-paralleltesting2" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">2 methods, 2 failed,   </span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
                     <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-paralleltesting" class="hide-methods failed suite-paralleltesting"> (hide)</a> <!-- hide-methods failed suite-paralleltesting -->
-                      <a href="#" panel-name="suite-paralleltesting" class="show-methods failed suite-paralleltesting"> (show)</a> <!-- show-methods failed suite-paralleltesting -->
+                      <a href="#" panel-name="suite-paralleltesting2" class="hide-methods failed suite-paralleltesting2"> (hide)</a> <!-- hide-methods failed suite-paralleltesting2 -->
+                      <a href="#" panel-name="suite-paralleltesting2" class="show-methods failed suite-paralleltesting2"> (show)</a> <!-- show-methods failed suite-paralleltesting2 -->
                     </span>
-                    <div class="method-list-content failed suite-paralleltesting">
+                    <div class="method-list-content failed suite-paralleltesting2">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-paralleltesting" title="testscript.ManageTest" class="method navigator-link" hash-for-method="verifyManagerInfo">verifyManagerInfo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-paralleltesting2" title="testscript.NewsTest" class="method navigator-link" hash-for-method="addNews">addNews</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-paralleltesting -->
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-paralleltesting2" title="testscript.ManageTest" class="method navigator-link" hash-for-method="verifyManagerInfo">verifyManagerInfo</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-paralleltesting2 -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,8 +122,56 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-paralleltesting" class="panel paralleltesting">
-          <div class="suite-paralleltesting-class-failed">
+        <div panel-name="suite-paralleltesting2" class="panel paralleltesting2">
+          <div class="suite-paralleltesting2-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testscript.NewsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addNews">
+                  </a> <!-- addNews -->
+                  <span class="method-name">addNews</span>
+                  <div class="stack-trace">java.io.IOException: Stream Closed
+	at java.base/java.io.FileInputStream.available0(Native Method)
+	at java.base/java.io.FileInputStream.available(FileInputStream.java:415)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:182)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:106)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
+	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
+	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
+	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:82)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
+	at testscript.NewsTest.addNews(NewsTest.java:21)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+... Removed 13 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify in newspage add news messages)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-paralleltesting2-class-failed -->
+          <div class="suite-paralleltesting2-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
               <span class="class-name">testscript.ManageTest</span>
@@ -129,51 +182,43 @@
                   <a name="verifyManagerInfo">
                   </a> <!-- verifyManagerInfo -->
                   <span class="method-name">verifyManagerInfo</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (480, 725)
-  (Session info: chrome=146.0.7680.80)
-Build info: version: &apos;4.38.0&apos;, revision: &apos;6b412e825c*&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.12&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [38ecf8e270a766ccbb122a29b886af64, clickElement {id=f.9651F955D9F347B6D40A42611304DEE5.d.FE0575D31C6B77A912C702F9C501BF62.e.88}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.80, chrome: {chromedriverVersion: 146.0.7680.80 (f08938029c88..., userDataDir: C:\Users\ashna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49712}, goog:processID: 15524, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49712/devtoo..., se:cdpVersion: 146.0.7680.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (38ecf8e270a766ccbb122a29b886af64)] -&gt; xpath: (//input[@value=&apos;no&apos;])[1]]
-Session ID: 38ecf8e270a766ccbb122a29b886af64
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at pages.ManagePage.topMenu(ManagePage.java:78)
-	at testscript.ManageTest.verifyManagerInfo(ManageTest.java:36)
+                  <div class="stack-trace">org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
+	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
+	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
+	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
+	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
+	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
+	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
+	at testscript.ManageTest.verifyManagerInfo(ManageTest.java:23)
 	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 22 stack frames
+Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
+	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
+	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
+	... 26 more
+... Removed 13 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Verify manage page and upload files)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-paralleltesting-class-failed -->
-        </div> <!-- panel paralleltesting -->
-        <div panel-name="test-xml-paralleltesting" class="panel">
+          </div> <!-- suite-paralleltesting2-class-failed -->
+        </div> <!-- panel paralleltesting2 -->
+        <div panel-name="test-xml-paralleltesting2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\ashna\git\7Rmartrepo\ProjectSuperMarket\paralleltesting.xml</span>
+            <span class="header-content">C:\Users\ashna\git\7Rmartrepo\ProjectSuperMarket\paralleltesting2.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;classes&quot; name=&quot;paralleltesting&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;paralleltesting2&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;parameter name=&quot;Browser&quot; value=&quot;chrome&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;generatereport.Listeners&quot;/&gt;
@@ -181,75 +226,80 @@ Session ID: 38ecf8e270a766ccbb122a29b886af64
   &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;chromeTest&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testscript.ManageTest&quot;/&gt;
+      &lt;class name=&quot;testscript.NewsTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chromeTest --&gt;
-&lt;/suite&gt; &lt;!-- paralleltesting --&gt;
+&lt;/suite&gt; &lt;!-- paralleltesting2 --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-paralleltesting" class="panel">
+        <div panel-name="testlist-paralleltesting2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for paralleltesting</span>
+            <span class="header-content">Tests for paralleltesting2</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">chromeTest (1 class)</span>
+                <span class="test-name">chromeTest (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-paralleltesting" class="panel">
+        <div panel-name="group-paralleltesting2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for paralleltesting</span>
+            <span class="header-content">Groups for paralleltesting2</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-paralleltesting" class="panel">
+        <div panel-name="times-paralleltesting2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for paralleltesting</span>
+            <span class="header-content">Times for paralleltesting2</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_paralleltesting');
-function tableData_paralleltesting() {
+suiteTableInitFunctions.push('tableData_paralleltesting2');
+function tableData_paralleltesting2() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyManagerInfo')
-data.setCell(0, 2, 'testscript.ManageTest')
-data.setCell(0, 3, 4143);
-window.suiteTableData['paralleltesting']= { tableData: data, tableDiv: 'times-div-paralleltesting'}
+data.setCell(0, 1, 'addNews')
+data.setCell(0, 2, 'testscript.NewsTest')
+data.setCell(0, 3, 642);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyManagerInfo')
+data.setCell(1, 2, 'testscript.ManageTest')
+data.setCell(1, 3, 611);
+window.suiteTableData['paralleltesting2']= { tableData: data, tableDiv: 'times-div-paralleltesting2'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
-              <div id="times-div-paralleltesting">
-              </div> <!-- times-div-paralleltesting -->
+              <span class="suite-total-time">Total running time: 1 seconds</span>
+              <div id="times-div-paralleltesting2">
+              </div> <!-- times-div-paralleltesting2 -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-paralleltesting" class="panel">
+        <div panel-name="reporter-paralleltesting2" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for paralleltesting</span>
+            <span class="header-content">Reporter output for paralleltesting2</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-paralleltesting" class="panel">
+        <div panel-name="ignored-methods-paralleltesting2" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-paralleltesting" class="panel">
+        <div panel-name="chronological-paralleltesting2" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -260,15 +310,44 @@ return data;
                 <span class="method-name">browserintialization(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.NewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">browserintialization(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">verifyManagerInfo</span>
-                <span class="method-start">2035 ms</span>
+                <span class="method-start">2054 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.NewsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addNews</span>
+                <span class="method-start">2178 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.ManageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod([TestResult name=verifyManagerInfo status=FAILURE method=ManageTest.verifyManagerInfo()[pri:0, insta...)</span>
-                <span class="method-start">6210 ms</span>
+                <span class="method-start">2729 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testscript.NewsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod([TestResult name=addNews status=FAILURE method=NewsTest.addNews()[pri:0, instance:testscript.NewsTes...)</span>
+                <span class="method-start">2868 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
