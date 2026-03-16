@@ -38,7 +38,8 @@ public class ManagePage {
 	WebElement topmenuradiobutton;
 	@FindBy(xpath = "//button[@class='btn btn-danger']")
 	WebElement savebutton;
-	@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	//@FindBy(xpath = "//div[@class='alert alert-success alert-dismissible']")
+	@FindBy(xpath="//div[contains(@class,'alert-success')]")
 	WebElement alertmessage;
 
 	public ManagePage newCateogory() {
