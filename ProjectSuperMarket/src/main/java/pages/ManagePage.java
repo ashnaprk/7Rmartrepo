@@ -1,5 +1,6 @@
 package pages;
 
+import org.openqa.selenium.JavascriptExecutor;
 //import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -69,46 +70,47 @@ public class ManagePage {
 	{
 
 		
-		 page.scrollIntoView(driver, topmenuradiobutton);
-		    wait.visibilityOfElement(driver, topmenuradiobutton);
-		    page.jsClick(driver,topmenuradiobutton);
-		return this;
-		
+		 JavascriptExecutor js = (JavascriptExecutor) driver;
+		    js.executeScript("arguments[0].scrollIntoView(true);", topmenuradiobutton);
+
+		    wait.elementToBeClicked(driver, topmenuradiobutton);
+
+		    js.executeScript("arguments[0].click();", topmenuradiobutton);
+
+		    return this;
 
 	}
 
 	public ManagePage saveInfo()
 
 	{
-        page.scrollIntoView(driver, savebutton);
-		//JavascriptExecutor js = (JavascriptExecutor) driver;
+       
+		JavascriptExecutor js = (JavascriptExecutor) driver;
 
-		//js.executeScript("arguments[0].scrollIntoView(true);", savebutton);
+	    js.executeScript("arguments[0].scrollIntoView(true);", savebutton);
 
-		wait.elementToBeClicked(driver, savebutton);
-        savebutton.click();
-		//js.executeScript("arguments[0].click();", savebutton);
+	    wait.elementToBeClicked(driver, savebutton);
 
-		return this;
+	    js.executeScript("arguments[0].click();", savebutton);
+
+	    return this;
 	}
 
-	//public ManagePage scrollDownAction() {
-		//JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		//javascript.executeScript("window.scrollBy(0,500)", " ");
-		//page.scrollDownAction(driver);
-		//return this;
+	public ManagePage scrollDownAction() {
+		 JavascriptExecutor javascript = (JavascriptExecutor) driver;
+		    javascript.executeScript("window.scrollBy(0,500)");
+		    return this;
 
-	//}
+	}
 
-	//public ManagePage scrolldownActionToTopMenuButton()
+	public ManagePage scrolldownActionToTopMenuButton()
 
-	//{
+	{
 
-		//JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		//javascript.executeScript("arguments[0].scrollIntoView(true)", topmenuradiobutton);
-		//page.scrollIntoView(driver, topmenuradiobutton);
-		//return this;
-	//}
+		    JavascriptExecutor javascript=(JavascriptExecutor) driver;
+		    javascript.executeScript("arguments[0].scrollIntoView(true)", topmenuradiobutton);
+		    return this;
+	}
 
 	public boolean isAlertMsgDisplayed() {
 		wait.visibilityOfElement(driver, alertmessage);
