@@ -21,10 +21,10 @@ public class HomePageTest extends Base {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtilities.getStringData(1, 0, "HomeTest");
 		String password = ExcelUtilities.getStringData(1, 1, "HomeTest");
-		login.enterUserNameAndPassWordfield(username, password);
+		login.enterUserNameAndPassWordfieldInLoginPage(username, password);
 		
-		homepage = login.loginButton();
-		homepage.adminButton().logoutButton();
+		homepage = login.ClickOnloginButtonInLoginPage();
+		homepage.ClickOnadminButtonInHomePage().ClickOnlogoutButtonInHomePage();
 		String expected = "Login | 7rmart supermarket";
 		String actual = driver.getTitle();
 		Assert.assertEquals(actual, expected, "Logout failes");

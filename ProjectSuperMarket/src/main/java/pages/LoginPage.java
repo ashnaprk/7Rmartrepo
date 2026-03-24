@@ -34,13 +34,13 @@ public class LoginPage
 	@FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']")
 	WebElement alert;
 	
-	public LoginPage enterUserNameAndPassWordfield(String usernamevalue,String passwordvalue) 
+	public LoginPage enterUserNameAndPassWordfieldInLoginPage(String usernamevalue,String passwordvalue) 
 	{
 		username.sendKeys(usernamevalue);
 		password.sendKeys(passwordvalue);
 		return this; 
 	}
-	public HomePage loginButton() 
+	public HomePage ClickOnloginButtonInLoginPage() 
 	{
 	
 		wait.elementToBeClicked(driver, login);

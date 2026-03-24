@@ -15,11 +15,11 @@ import utilities.ExcelUtilities;
 public class LoginPageTest extends Base {
 	HomePage homepage;
 
-	@Test(description="Verify LoginPage",dataProvider = "credentialvalues", groups = "smoke")
+	@Test(description="Verify LoginPage with valid and invalid credentials",dataProvider = "credentialvalues", groups = "smoke")
 	public void verifyData(String username, String password) {
 		LoginPage login = new LoginPage(driver);
-		login.enterUserNameAndPassWordfield(username, password);
-		homepage = login.loginButton();
+		login.enterUserNameAndPassWordfieldInLoginPage(username, password);
+		homepage = login.ClickOnloginButtonInLoginPage();
 		boolean homepagedispalyed = login.isHomePagedisplayed();
 		Assert.assertTrue(homepagedispalyed, Constant.ERRORMESSAGEFORLOGIN);
 
@@ -36,8 +36,8 @@ public class LoginPageTest extends Base {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtilities.getStringData(1, 0, "LoginpageTest");
 		String password = ExcelUtilities.getStringData(1, 1, "LoginpageTest");
-		login.enterUserNameAndPassWordfield(username, password);
-		homepage = login.loginButton();
+		login.enterUserNameAndPassWordfieldInLoginPage(username, password);
+		homepage = login.ClickOnloginButtonInLoginPage();
 
 	}
 
@@ -45,8 +45,8 @@ public class LoginPageTest extends Base {
 	@Parameters({ "usernamefields", "passwordfields" })
 	public void verifyInvalidUsernameAndValidPassword(String username, String password) {
 		LoginPage login = new LoginPage(driver);
-		login.enterUserNameAndPassWordfield(username, password);
-		homepage = login.loginButton();
+		login.enterUserNameAndPassWordfieldInLoginPage(username, password);
+		homepage = login.ClickOnloginButtonInLoginPage();
 
 	}
 
@@ -54,8 +54,8 @@ public class LoginPageTest extends Base {
 	@Parameters({ "usernamefield", "passwordfield" })
 	public void verifyValidUsernameAndInvalidPassword(String username, String password) {
 		LoginPage login = new LoginPage(driver);
-		login.enterUserNameAndPassWordfield(username, password);
-		homepage = login.loginButton();
+		login.enterUserNameAndPassWordfieldInLoginPage(username, password);
+		homepage = login.ClickOnloginButtonInLoginPage();
 	}
 
 }

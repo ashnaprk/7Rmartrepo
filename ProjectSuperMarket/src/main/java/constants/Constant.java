@@ -8,6 +8,12 @@ public class Constant
 	 
 	public static final String ALERTMESSAGEUSERADDEDSUCCESSFULLY="User added succesfully Alert pops up";
 	
+	public static final String ALERTMESSAGEFORSEARCH="User not found in table Of Admin Search";
+	
+	public static final String ALERTMESSAGEFORNEWS="News added succesfully";
+	
+	public static final String ALERTMESSAGEFORNEWSSEARCH="News is not found";
+	
 	public static final String ALERTMESSAGESUCCESSFULLYLOADEDHOMEPAGE="User logged in and successfully logged out";
 	
 	public static final String TESTDATAFILE= System.getProperty("user.dir")+"//src//main//resources//Book1.xlsx"; //external path

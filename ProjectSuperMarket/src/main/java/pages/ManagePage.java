@@ -40,30 +40,30 @@ public class ManagePage {
 
 	WebElement alertmessage;
 
-	public ManagePage newCateogory() {
+	public ManagePage ClickOnNewCateogoryInManagePage() {
 
 		newcateogory.click();
 		return this;
 	}
 
-	public ManagePage enterCateogory(String entercategoryname) {
+	public ManagePage enterCateogoryNameInManagePage(String entercategoryname) {
 		entercateogory.sendKeys(entercategoryname);
 		return this;
 	}
 
-	public ManagePage discounts() {
+	public ManagePage enterDiscountsInManagePage() {
 
 		discount.click();
 		return this;
 	}
 
-	public ManagePage choosefiles() {
+	public ManagePage UploadfilesInManagePage() {
 		fileupload.sendKeysForFileUpload(choosefile, Constant.TESTDATAIMAGE);
 
 		return this;
 	}
 
-	public ManagePage topMenu()
+	public ManagePage ClickOntopMenuRadioButtonInManagePage()
 
 	{
 
@@ -76,7 +76,7 @@ public class ManagePage {
 
 	}
 
-	public ManagePage saveInfo()
+	public ManagePage ClickOnsaveInfoInManagePage()
 
 	{
 
@@ -87,14 +87,14 @@ public class ManagePage {
 		return this;
 	}
 
-	public ManagePage scrollDownAction() {
+	public ManagePage scrollDownActionInManagePage() {
 		JavascriptExecutor javascript = (JavascriptExecutor) driver;
 		javascript.executeScript("window.scrollBy(0,500)");
 		return this;
 
 	}
 
-	public ManagePage scrolldownActionToTopMenuButton()
+	public ManagePage scrolldownActionToTopMenuButtonInManagePage()
 
 	{
 
@@ -103,7 +103,7 @@ public class ManagePage {
 		return this;
 	}
 
-	public boolean isAlertMsgDisplayed() {
+	public boolean isAlertMsgDisplayedInManagePage() {
 		wait.visibilityOfElement(driver, alertmessage);
 		return alertmessage.isDisplayed();
 

@@ -8,60 +8,12 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">paralleltesting2</th></tr>
-<tr><td><a href="#t0">chromeTest</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">3,249</td><td></td><td></td></tr>
+<tr><th colspan="8">paralleltesting</th></tr>
+<tr><td><a href="#t0">chromeTest</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">8,886</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">paralleltesting2</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chromeTest &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testscript.ManageTest</td><td><a href="#m0">verifyManagerInfo</a></td><td rowspan="1">1773641817847</td><td rowspan="1">611</td></tr><tr class="failedodd"><td rowspan="1">testscript.NewsTest</td><td><a href="#m1">addNews</a></td><td rowspan="1">1773641817971</td><td rowspan="1">642</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">paralleltesting</th></tr></tbody><tbody id="t0"><tr><th colspan="4">chromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testscript.NewsTest</td><td><a href="#m0">addNews</a></td><td rowspan="1">1774376749285</td><td rowspan="1">3341</td></tr><tr class="passedeven"><td><a href="#m1">searchNews</a></td><td rowspan="1">1774376754022</td><td rowspan="1">1321</td></tr></tbody>
 </table>
-<h2>chromeTest</h2><h3 id="m0">testscript.ManageTest#verifyManagerInfo</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.apache.poi.openxml4j.exceptions.NotOfficeXmlFileException: No valid entries or contents found, this is not a valid OOXML (Office Open XML) file
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:156)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:94)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testscript.ManageTest.verifyManagerInfo(ManageTest.java:23)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-Caused by: java.util.zip.ZipException: Unexpected record signature: 0XDE3550E3
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.getNextZipEntry(ZipArchiveInputStream.java:296)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.getNextEntry(ZipArchiveThresholdInputStream.java:152)
-	... 26 more
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">testscript.NewsTest#addNews</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.io.IOException: Stream Closed
-	at java.base/java.io.FileInputStream.available0(Native Method)
-	at java.base/java.io.FileInputStream.available(FileInputStream.java:415)
-	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:351)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
-	at java.base/java.io.PushbackInputStream.read(PushbackInputStream.java:182)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:106)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.fill(ZipArchiveInputStream.java:861)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readFromInflater(ZipArchiveInputStream.java:650)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.readDeflated(ZipArchiveInputStream.java:625)
-	at org.apache.commons.compress.archivers.zip.ZipArchiveInputStream.read(ZipArchiveInputStream.java:528)
-	at java.base/java.io.FilterInputStream.read(FilterInputStream.java:132)
-	at org.apache.poi.openxml4j.util.ZipArchiveThresholdInputStream.read(ZipArchiveThresholdInputStream.java:80)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:240)
-	at org.apache.poi.util.IOUtils.toByteArray(IOUtils.java:203)
-	at org.apache.poi.openxml4j.util.ZipArchiveFakeEntry.&lt;init&gt;(ZipArchiveFakeEntry.java:82)
-	at org.apache.poi.openxml4j.util.ZipInputStreamZipEntrySource.&lt;init&gt;(ZipInputStreamZipEntrySource.java:98)
-	at org.apache.poi.openxml4j.opc.ZipPackage.&lt;init&gt;(ZipPackage.java:132)
-	at org.apache.poi.openxml4j.opc.OPCPackage.open(OPCPackage.java:319)
-	at org.apache.poi.ooxml.util.PackageHelper.open(PackageHelper.java:59)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:290)
-	at org.apache.poi.xssf.usermodel.XSSFWorkbook.&lt;init&gt;(XSSFWorkbook.java:286)
-	at utilities.ExcelUtilities.getStringData(ExcelUtilities.java:22)
-	at testscript.NewsTest.addNews(NewsTest.java:21)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 13 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>chromeTest</h2><h3 id="m0">testscript.NewsTest#addNews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testscript.NewsTest#searchNews</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

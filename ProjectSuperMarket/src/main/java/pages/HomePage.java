@@ -30,32 +30,32 @@ public class HomePage
 	@FindBy(xpath="(//i[@class='fas fa-arrow-circle-right'])[7]")
 	WebElement moreNewsinfo;
 	
-	public HomePage adminButton() 
+	public HomePage ClickOnadminButtonInHomePage() 
 	{
 		
 		admin.click();
 		return this;
 		
 	}
-	public HomePage logoutButton()  
+	public HomePage ClickOnlogoutButtonInHomePage()  
 	{                            
 
 		logout.click();
 		return this;
 	
 	}
-	public UserAdminPage moreInfoButton()   
+	public UserAdminPage ClickOnmoreInfoButtonInUserAdminPage()   
 	{
 		moreinfoadmin.click();
 		return new UserAdminPage(driver); 
 	
 	}
-	public ManagePage manageInfo()
+	public ManagePage ClickOnmanageInfoButtonInManagePage()
 	{
 		managemoreinfo.click();
 		return new ManagePage(driver);
 	}
-	public NewsPage moreNewsInfoButton()
+	public NewsPage ClickOnmoreNewsInfoButtonInNewsPage()
 	{
 		moreNewsinfo.click();
 		return new NewsPage(driver);
