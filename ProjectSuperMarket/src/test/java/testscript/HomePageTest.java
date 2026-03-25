@@ -15,7 +15,7 @@ public class HomePageTest extends Base {
 	HomePage homepage;
 
 	@Test(description = "Verify that the user can logout successfully after logging in")
-	public void verifylogout() throws AWTException, IOException
+	public void verifylogoutinHomePage() throws AWTException, IOException
 
 	{
 		LoginPage login = new LoginPage(driver);

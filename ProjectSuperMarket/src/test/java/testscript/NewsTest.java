@@ -18,7 +18,7 @@ public class NewsTest extends Base {
 
 
 	@Test(description = "Verify adding news messages in the News page")
-	public void addNews() throws IOException {
+	public void VerifyAddNewsInNewsPage() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtilities.getStringData(1, 0, "LoginpageTest");
 		String password = ExcelUtilities.getStringData(1, 1, "LoginpageTest");
@@ -31,7 +31,7 @@ public class NewsTest extends Base {
         
 	}
 	@Test(description = "Verify that the user can search for a news in the News page")
-	public void searchNews() throws IOException
+	public void verifySearchNewsInNewsPage() throws IOException
 	{
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtilities.getStringData(1, 0, "LoginpageTest");

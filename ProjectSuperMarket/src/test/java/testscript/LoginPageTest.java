@@ -16,7 +16,7 @@ public class LoginPageTest extends Base {
 	HomePage homepage;
 
 	@Test(description="Verify LoginPage with valid and invalid credentials",dataProvider = "credentialvalues", groups = "smoke")
-	public void verifyData(String username, String password) {
+	public void verifywithValidAndInvalidcredentials(String username, String password) {
 		LoginPage login = new LoginPage(driver);
 		login.enterUserNameAndPassWordfieldInLoginPage(username, password);
 		homepage = login.ClickOnloginButtonInLoginPage();

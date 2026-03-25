@@ -22,7 +22,7 @@ public class UserAdminTest extends Base {
 	FakerUtility faker = new FakerUtility();
 
 	@Test(description = "Verify the functionality of adding a new user to UserAdmin Page", retryAnalyzer = retry.Retry.class)
-	public void verifyAdminInfo() throws IOException {
+	public void verifyAddNewUserInAdminPage() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtilities.getStringData(1, 0, "Adminpagetest");
 		String password = ExcelUtilities.getStringData(1, 1, "Adminpagetest");
@@ -40,7 +40,7 @@ public class UserAdminTest extends Base {
 	}
 
 	@Test(description = "Verify that the user can search for a username in the Admin page")
-	public void searchUsernameinAdminPage() throws IOException {
+	public void verifySearchAUsernameinAdminPage() throws IOException {
 		LoginPage login = new LoginPage(driver);
 		String username = ExcelUtilities.getStringData(1, 0, "Adminpagetest");
 		String password = ExcelUtilities.getStringData(1, 1, "Adminpagetest");
