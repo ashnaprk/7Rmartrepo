@@ -1,65 +1,116 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-03-24T23:55:46 IST" name="paralleltesting" finished-at="2026-03-24T23:55:55 IST" duration-ms="8886">
+  <suite started-at="2026-03-25T11:54:05 IST" name="Default suite" finished-at="2026-03-25T11:54:05 IST" duration-ms="68">
     <groups>
     </groups>
-    <test started-at="2026-03-24T23:55:46 IST" name="chromeTest" finished-at="2026-03-24T23:55:55 IST" duration-ms="8886">
-      <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.NewsTest@446a1e84]" started-at="2026-03-24T23:55:46 IST" name="browserintialization" finished-at="2026-03-24T23:55:49 IST" duration-ms="2648" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2026-03-25T11:54:05 IST" name="Default test" finished-at="2026-03-25T11:54:05 IST" duration-ms="68">
+      <class name="testscript.ManageTest">
+        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.ManageTest@4d5d943d]" started-at="2026-03-25T11:54:05 IST" name="browserintialization" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1774419845208" status="FAIL">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse-359003521\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse-359003521\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserintialization -->
-        <test-method signature="addNews()[pri:0, instance:testscript.NewsTest@446a1e84]" started-at="2026-03-24T23:55:49 IST" name="addNews" description="Verify adding news messages in the News page" finished-at="2026-03-24T23:55:52 IST" duration-ms="3341" status="PASS">
+        <test-method signature="verifyManagerInfo()[pri:0, instance:testscript.ManageTest@4d5d943d]" started-at="2026-03-25T11:54:05 IST" name="verifyManagerInfo" description="Verify that a new category can be added to the Manage Page" finished-at="2026-03-25T11:54:05 IST" duration-ms="0" status="SKIP">
+          <exception class="org.testng.TestNGException">
+            <message>
+              <![CDATA[
+Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse-359003521\testng-customsuite.xml]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'Browser' is required by BeforeMethod on method browserintialization but has not been marked @Optional or defined
+in C:\Users\ashna\AppData\Local\Temp\testng-eclipse-359003521\testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:264)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:352)
+at org.testng.internal.Parameters.createParameters(Parameters.java:690)
+at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:163)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:313)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- addNews -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@446a1e84]" started-at="2026-03-24T23:55:52 IST" name="afterMethod" finished-at="2026-03-24T23:55:52 IST" duration-ms="165" status="PASS">
+        </test-method> <!-- verifyManagerInfo -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.ManageTest@4d5d943d]" started-at="2026-03-25T11:54:05 IST" name="afterMethod" finished-at="2026-03-25T11:54:05 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=addNews status=SUCCESS method=NewsTest.addNews()[pri:0, instance:testscript.NewsTest@446a1e84] output={null}]]]>
+                <![CDATA[[TestResult name=verifyManagerInfo status=SKIP method=ManageTest.verifyManagerInfo()[pri:0, instance:testscript.ManageTest@4d5d943d] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="browserintialization(java.lang.String)[pri:0, instance:testscript.NewsTest@446a1e84]" started-at="2026-03-24T23:55:52 IST" name="browserintialization" finished-at="2026-03-24T23:55:54 IST" duration-ms="1219" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- browserintialization -->
-        <test-method signature="searchNews()[pri:0, instance:testscript.NewsTest@446a1e84]" started-at="2026-03-24T23:55:54 IST" name="searchNews" finished-at="2026-03-24T23:55:55 IST" duration-ms="1321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchNews -->
-        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@446a1e84]" started-at="2026-03-24T23:55:55 IST" name="afterMethod" finished-at="2026-03-24T23:55:55 IST" duration-ms="143" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=searchNews status=SUCCESS method=NewsTest.searchNews()[pri:0, instance:testscript.NewsTest@446a1e84] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterMethod -->
-      </class> <!-- testscript.NewsTest -->
-    </test> <!-- chromeTest -->
-  </suite> <!-- paralleltesting -->
+      </class> <!-- testscript.ManageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

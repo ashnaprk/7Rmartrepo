@@ -6,6 +6,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
+
+
 public class PageUtility
 
 {
@@ -32,20 +34,24 @@ public class PageUtility
 
 	}
 
-	public void jsClick(WebDriver driver, WebElement element) {
+	public void scrollToElement(WebDriver driver, WebElement element)
 
-		JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		javascript.executeScript("arguments[0].click();", element);
+	{
+
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
 
-	public void scrollDownAction(WebDriver driver) {
-		JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		javascript.executeScript("window.scrollBy(0,500)", " ");
-	}
+	public void clickUsingJs(WebDriver driver, WebElement element) {
+		JavascriptExecutor js = (JavascriptExecutor) driver;
+		js.executeScript("arguments[0].click();", element);
 
-	public void scrollIntoView(WebDriver driver, WebElement element) {
-		JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		javascript.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
-
+    public void scrollByPixel(WebDriver driver,int x,int y)
+    {
+    	JavascriptExecutor js=(JavascriptExecutor) driver;
+    	js.executeScript("window.scrollBy(arguments[0], arguments[1]);", x,y);
+    
+    }
+    
 }
