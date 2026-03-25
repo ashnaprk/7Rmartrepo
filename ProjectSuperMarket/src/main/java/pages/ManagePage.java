@@ -57,9 +57,9 @@ public class ManagePage {
 	}
 
 	public ManagePage UploadfilesInManagePage() {
-		
+
 		fileupload.sendKeysForFileUpload(choosefile, Constant.TESTDATAIMAGE);
-        return this;
+		return this;
 	}
 
 	public ManagePage ClickOntopMenuRadioButtonInManagePage()
@@ -69,10 +69,6 @@ public class ManagePage {
 		wait.elementToBeClicked(driver, topmenuradiobutton);
 		page.clickUsingJs(driver, topmenuradiobutton);
 		return this;
-		// JavascriptExecutor js = (JavascriptExecutor) driver;
-		// js.executeScript("arguments[0].scrollIntoView(true);", topmenuradiobutton);
-		// wait.elementToBeClicked(driver, topmenuradiobutton);
-		// js.executeScript("arguments[0].click();", topmenuradiobutton);
 
 	}
 
@@ -83,18 +79,12 @@ public class ManagePage {
 		wait.elementToBeClicked(driver, savebutton);
 		page.clickUsingJs(driver, savebutton);
 		return this;
-		// JavascriptExecutor js = (JavascriptExecutor) driver;
-		// js.executeScript("arguments[0].scrollIntoView(true);", savebutton);
-		// wait.elementToBeClicked(driver, savebutton);
-		// js.executeScript("arguments[0].click();", savebutton);
 
 	}
 
 	public ManagePage scrollDownActionInManagePage() {
 		page.scrollByPixel(driver, 0, 500);
 		return this;
-		// JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		// javascript.executeScript("window.scrollBy(0,500)");
 
 	}
 
@@ -102,9 +92,7 @@ public class ManagePage {
 
 	{
 		page.scrollToElement(driver, topmenuradiobutton);
-		// JavascriptExecutor javascript = (JavascriptExecutor) driver;
-		// javascript.executeScript("arguments[0].scrollIntoView(true)",
-		// topmenuradiobutton);
+
 		return this;
 	}
 
